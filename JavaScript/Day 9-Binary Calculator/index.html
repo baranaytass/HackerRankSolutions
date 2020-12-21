@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/binaryCalculator.css" type="text/css">
+    <link rel="shortcut icon" href="">
+</head>
+
+<body>
+    <div id="res" class="resultClass"><label></label></div>
+    <div id="btns" class="buttonContainer">
+        <button id="btn0" onclick="document.getElementById('res').innerHTML += '0'" class="buttonClass">0</button>
+        <button id="btn1" onclick="document.getElementById('res').innerHTML += '1'" class="buttonClass">1</button>
+
+        <button id="btnClr" onclick="document.getElementById('res').innerHTML = ''" class="buttonClass">C</button>
+        <button id="btnEql" onclick="onClick()" class="buttonClass"> = </button>
+
+        <button id="btnSum" onclick="document.getElementById('res').innerHTML += '+'" class="buttonClass">+</button>
+        <button id="btnSub" onclick="document.getElementById('res').innerHTML += '-'" class="buttonClass">-</button>
+        <button id="btnMul" onclick="document.getElementById('res').innerHTML += '*'" class="buttonClass">*</button>
+        <button id="btnDiv" onclick="document.getElementById('res').innerHTML += '/'" class="buttonClass">/</button>
+    </div>
+
+    <script src="js/binaryCalculator.js" type="text/javascript"></script>
+</body>
+</html>
